@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+/***** INPUT FIELDS ********/
+
+section#post {
+    height: 10vh;
+    /*border-radius: 5px 5px 0 0;*/
+    padding: 0;
+    margin: 0;
+}
+
+form.post {
+    margin: 0;
+    padding-top: 3vh;
+    height: calc( 100% - 3vh );
+}
+
+div.input-right {
+    height: calc(100% - 3vh);
+    margin: 0px 3vw 0 0;
+    float: right;
+    text-align: left;
+    width: 27vw;
+}
+div.input-left {
+    height: calc(100% - 10px);
+    margin: 0px 0 0 3vw;
+    float: left;
+}
+
+input:not([type=submit]).post {
+    border-style: none none solid none;
+    outline: none;
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.87);
+    border-width: 0.15em;
+    height: 4vh;
+}
+input[type=submit].post {
+    margin-top: 0;
+    text-align: center;
+    width: 3vw;
+    height: 3vh;
+    padding: 0;
+    background: url(../img/send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-width: 0;
+    border-color: darkblue;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+input.message {
+    width: 60vw;
+}
+input.name {
+    width: 20vw;
+}
+
+/*******************************/
+
+section#messageFrame {
+    height: 90vh;
+    background-color: ; /*lightgray*/
+}
+
+iframe.messageHeading {
+    border: none;
+    width: calc(100% - 0px);
+    height: calc(10% - 0px);
+    background-color: #0097A7;
+}
+iframe.messageFrame {
+    border:none;
+    width: calc(100% - 60px);
+    height: calc(90% - 60px);
+    background-color: #00BCD4; /*lightgray;*/
+    padding: 30px;
+}
+
+div.load-more {
+    width: 100%;
+    text-align: center;
+}
+button.load-more {
+    background-color: antiquewhite;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /*padding: 10px;
+    font-size: 1em;
+    width: 10em;
+    margin: auto;*/
+}
+
+div.message-cell {
+    margin: auto;
+    width: calc(100% - 60px);
+}
+    div.message-text {
+        background-color: white;
+        width: calc(100% - 40px);
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+    }
+        p.message-cell {
+            font-family: roboto;
+        }
+    p#name-label {
+        text-align: right;
+        padding-right: 40px;
+        margin-top: 5px;
+    }

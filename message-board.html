@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    
+    <title>Admin Chat</title>
+</head>
+<body>
+
+<section id="messageFrame">
+    <iframe src="message-heading.php" class="messageHeading"></iframe>
+    <iframe src="retrieve.php#bottom" class="messageFrame"></iframe>
+    <iframe src="message-refresh.php" style="visibility:hidden;position:fixed;height:0"></iframe>
+</section>
+
+<section id="post">
+<form class="post" name="post" action="insert.php" method="post">
+    <div class="input-left">
+    <input class="message post" type="text" name="message" maxlength="200" placeholder="Message">
+    </div>
+    <div class="input-right">
+    <input class="name post" type="text" name="firstname" maxlength="15" placeholder="Name">
+    <input class="post" type="submit" value="">
+    </div>
+</form>
+</section>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src="js/keep_message.js"></script>
+</body>
+</html>
